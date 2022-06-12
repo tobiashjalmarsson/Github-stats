@@ -2,7 +2,7 @@
 
 import {Octokit} from 'octokit'
 // npx ts-node main.ts
-
+import {StatsType} from './CommonInterfaces'
 
 
 console.log("Test")
@@ -19,10 +19,6 @@ const octokit = new Octokit({
 
 console.log(resp)
 
-enum StatsType {
-    CommitActivity = 0,
-    Others = 1,
-}
 
 
 class GitHubData{
